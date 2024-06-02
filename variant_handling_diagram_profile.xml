@@ -1,0 +1,30 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="1EA03222-7" name="VariantHandlingDiagramProfile" version="1.0" notes="VariantHandlingDiagramProfile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Configuration" alias="Configuration" notes="A configuration diagram collect the relationships of a VariantConfiguration block." cx="122" cy="102" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::BlockDefinition" baseStereotypes="SysML1.4::BlockDefinition">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="Configuration"/>
+						<Property name="diagramID" value="config"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Compatiblity" notes="A compatibility diagram illustrates compatibility constraints between Variants.&#xA;" cx="144" cy="115" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::BlockDefinition" baseStereotypes="SysML1.4::BlockDefinition">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="Compatibility"/>
+						<Property name="diagramID" value="compatibility"/>
+						<Property name="toolbox" value="VariantHandlingToolbox"/>
+						<Property name="toolboxPage" value="CompatibilityRelations=1;"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="SysML1.4::BlockDefinition" notes="" cx="128" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0"/>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

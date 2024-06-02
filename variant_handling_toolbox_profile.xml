@@ -1,0 +1,20 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="64215C5B-7" name="VariantHandlingToolbox" version="1.0" notes="VariantHandlingToolbox"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="CompatibilityRelations" alias="Compatibility Relationships" notes="Relationships for Compatibility Diagrams." cx="280" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="VariantHandlingProfile::Requires(UML::Dependency)" type="" description="" unit="" values="" default="Requires"/>
+					<Tag name="VariantHandlingProfile::XOR(UML::Dependency)" type="" description="" unit="" values="" default="Excludes"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

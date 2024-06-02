@@ -1,0 +1,48 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="852AE6DC-3" name="VariantHandlingProfile" version="1.0" notes="VariantHandlingProfile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="VariationPoint" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+				<TaggedValues>
+					<Tag name="variation"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Variation" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block"/>
+			<Stereotype name="Variant" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+				<metarelationships>
+					<metarelationship metaclass="Generalization" constraint="VariantHandlingProfile::Variation"/>
+				</metarelationships>
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="VariantHandlingProfile::Incompatible" constraint="VariantHandlingProfile::Variant"/>
+					<stereotypedrelationship stereotype="VariantHandlingProfile::Requires" constraint="VariantHandlingProfile::Variant"/>
+				</stereotypedrelationships>
+			</Stereotype>
+			<Stereotype name="VariantConfiguration" notes="" cx="131" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Variant" baseStereotypes="Variant">
+				<metarelationships>
+					<metarelationship metaclass="Aggregation" constraint="VariantHandlingProfile::Version"/>
+				</metarelationships>
+			</Stereotype>
+			<Stereotype name="Version" notes="" cx="124" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Variant" baseStereotypes="Variant"/>
+			<Stereotype name="Requires" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Incompatible" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes>
+			<TaggedValueType property="variation" description="" notes="Type=RefGUID;Stereotypes=Variation;"/>
+		</TaggedValueTypes>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
